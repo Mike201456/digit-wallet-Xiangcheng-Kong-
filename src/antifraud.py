@@ -134,7 +134,7 @@ import timeit
 start = timeit.default_timer()
 # determine if the transaction is 'trusted' or 'unverified' line by line 
 n = len(stream_data)
-for i in range(n)[:5]:
+for i in range(n):
     e = stream_data[i]
     if str(e).startswith('2016'):
         d = str(e).strip().replace(',', '').split()
